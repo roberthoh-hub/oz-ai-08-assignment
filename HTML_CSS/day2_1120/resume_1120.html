@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AH_08_ryunghoh_resume</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- 헤더: 이름 · 연락처 · 한 줄 소개 -->
+        <header class="profile">
+            <img class="profile-photo" src="ryunghoh.png" alt="허륭 프로필 사진">
+            <div class="profile-text">
+                <h1>허륭 <span class="en-name">Ryung Hoh (Robert)</span></h1>
+                <p class="headline">병원·국제보건 현장 4년의 실무 경험에 Python·SQL·머신러닝 분석 역량을 더해, 의료 현장의 pain point를 데이터로 정의하고 서비스로 설계하는 AI 헬스케어 기획자</p>
+                <ul class="contact">
+                    <li><a href="mailto:ryung.hoh@gmail.com">ryung.hoh@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/ryung-hoh-5501a81bb/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/roberthoh-hub" target="_blank">GitHub</a></li>
+                    <li><a href="https://velog.io/@ryunghoh/posts" target="_blank">기술블로그</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- 자기소개 -->
+        <section>
+            <h2>Self Introduction</h2>
+            <p>안녕하세요 허륭입니다. 다양한 나라 사람들의 언어와 컴퓨터의 언어를 배우고 있습니다. 언어를 이해하고 정리하는 것을 좋아합니다. 소통할 수 있는 방식을 오즈코딩스쿨을 통해 하나 더 늘릴 수 있어 기쁩니다.</p>
+        </section>
+
+        <!-- 핵심 역량 -->
+        <section>
+            <h2>Core Competencies</h2>
+            <ul class="card-list">
+                <li><strong>AI 헬스케어 서비스 기획</strong>DUR 경고 피로 문제를 과제로 정의하고 KPI 트리, 정답(Y) 설계, 3등급 경고 화면(RED·YELLOW·GREY)까지 기획한 뒤 가상 EMR 데모로 시연</li>
+                <li><strong>의료 데이터 분석</strong>Python과 SQL로 임상 데이터 정제·앙상블 모델링, 라벨 누수 점검, Fisher 검정·Wilson 신뢰구간 등 통계 검증</li>
+                <li><strong>의료기관 실무 이해</strong>분당서울대병원·국립재활원·연세의료원에서 의료인력 교육, 해외 병원 건립 사업, WHO 협력 행사 운영</li>
+                <li><strong>팀 리딩·글로벌 협업</strong>AI 프로젝트 팀장 2회(DACON 해커톤 1위 포함), 다자간 이해관계 조정, 18개국 연수생·해외 보건부와 영어로 소통</li>
+            </ul>
+        </section>
+
+        <!-- AI 프로젝트 -->
+        <section>
+            <h2>AI Projects</h2>
+
+            <article class="item">
+                <div class="item-head">
+                    <h3>SmartDUR — 처방 단계 DUR 경고 우선순위 서비스</h3>
+                    <span class="period">2026.10 – 2026.11</span>
+                </div>
+                <p class="meta">OZ코딩스쿨 출발드림팀(6인) · 팀장 · 최종 발표자</p>
+                <ul>
+                    <li>환자 임상 데이터 14개 테이블로 입원 경고 1,030건을 중요도에 따라 3등급으로 나누는 모델과 화면 기획</li>
+                    <li>경고 유형만으로 PR-AUC 0.51이 나오는 "정답 지름길"을 발견해 학습 대상을 재정의, 0.17(기준선 0.13 수준)로 라벨 누수 제거</li>
+                    <li>기대효과 계산 양식 설계, 담당 경로 순효과 4.37억 원 · ROI 153.8% 산출</li>
+                    <li>RACI 역할표·게이트(G1~G5) 운영, 최종 발표와 HTML 가상 EMR 데모 시연</li>
+                </ul>
+            </article>
+
+            <article class="item">
+                <div class="item-head">
+                    <h3>난임 환자 임신 성공 예측 AI 해커톤 <span class="badge">팀 1위</span></h3>
+                    <span class="period">2026.10.14 – 2026.10.20</span>
+                </div>
+                <p class="meta">DACON · OZ코딩스쿨 8기 · 팀 허전하재(4인) · 팀장 · 실험 해석·채택 판단 · 발표</p>
+                <ul>
+                    <li>난임 시술 데이터로 임신 성공 확률을 예측하는 이진분류 대회, Public LB 0.7427546으로 팀 1위</li>
+                    <li>LightGBM·CatBoost·결측 유지 모델 3종 앙상블로 팀 전략을 "다르게 틀리는 모델 섞기"로 전환</li>
+                    <li>AUC에 맞춘 순위손실(pairwise ranking loss) 신경망을 제안, 5% 블렌딩으로 최종 제출까지 유지</li>
+                </ul>
+            </article>
+
+            <article class="item">
+                <div class="item-head">
+                    <h3>기타 AI 헬스케어 실습 프로젝트</h3>
+                    <span class="period">2026.09 – 2026.10</span>
+                </div>
+                <ul>
+                    <li>폐선암 림프절 전이 예측(6조): 피처정의서 작성, 변수 검토사항 시트 정리</li>
+                    <li>흡연 여부 건강데이터 시각화(4인): 7,000건 데이터 EDA·시각화, 팀 일정 조율</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- 경력 -->
+        <section>
+            <h2>Career &amp; Work Experience</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>회사명</th>
+                        <th>부서명</th>
+                        <th>직무</th>
+                        <th>기간(년.월)</th>
+                        <th>주요성과</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>분당서울대학교병원</td>
+                        <td>대외협력팀</td>
+                        <td>계약사무직</td>
+                        <td>2025.02 – 2026.05</td>
+                        <td>우즈베키스탄 타슈켄트 종합병원(300병상) 건립 컨설팅 사업 연락 담당, 15개월간 보건부 주간보고 누락 0건, 의료인력 교육계획 초안 제출</td>
+                    </tr>
+                    <tr>
+                        <td>국립재활원</td>
+                        <td>척수손상재활과</td>
+                        <td>청년인턴</td>
+                        <td>2024.07 – 2024.12</td>
+                        <td>WHO 협력 재활포럼 운영 지원, 국제연수 만족도 5점 만점 (한-영 순차통역 20회 이상)</td>
+                    </tr>
+                    <tr>
+                        <td>연세의료원 산학협력단</td>
+                        <td>보건학계열</td>
+                        <td>연구원</td>
+                        <td>2023.03 – 2023.08</td>
+                        <td>KOFIH 이종욱펠로우십 9개국 14명 연수 운영</td>
+                    </tr>
+                    <tr>
+                        <td>연세대학교 보건대학원</td>
+                        <td>사무팀</td>
+                        <td>계약직 사무원</td>
+                        <td>2021.03 – 2023.02</td>
+                        <td>KOICA 연수생 18개국 57명 중 98% 보건학 석사학위 취득</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 학력 · 교육 -->
+        <section>
+            <h2>Education</h2>
+            <ul class="plain">
+                <li><span class="period">2026 – 현재</span> OZ코딩스쿨 AI 헬스케어 과정 — Python, SQL, 머신러닝, 딥러닝(CNN), HTML/CSS</li>
+                <li><span class="period">2015 – 2021</span> 차의과학대학교 보건복지정보학 전공 — 연례 연구경진대회 1위, 보건통계 학생 튜터</li>
+                <li><span class="period">2012 – 2015</span> 대일외국어고등학교 독일어과</li>
+            </ul>
+        </section>
+
+        <!-- 기술 -->
+        <section>
+            <h2>Skills</h2>
+            <div class="tags">
+                <span>Python</span><span>pandas</span><span>scikit-learn</span><span>LightGBM</span><span>CatBoost</span><span>Optuna</span><span>Keras</span><span>SQL</span><span>MongoDB</span><span>Excel·VBA</span><span>Access</span><span>HTML/CSS</span><span>Miro</span><span>Notion</span><span>생성형 AI</span>
+            </div>
+        </section>
+
+        <!-- 자격증 · 외국어 -->
+        <section class="two-col">
+            <div>
+                <h2>Certificates</h2>
+                <ul class="plain">
+                    <li>ADsP 데이터분석 준전문가 (2026.08)</li>
+                    <li>사회복지사 1급 (2023.08)</li>
+                    <li>한국사능력검정 2급 (2024.06)</li>
+                    <li>KBS한국어능력시험 3-급 (2026.09)</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Languages</h2>
+                <ul class="plain">
+                    <li>영어 — TOEIC 950 · IELTS 7.5 (CEFR C1)</li>
+                    <li>독일어 — CEFR B2</li>
+                    <li>러시아어 — 기초 (업무 중 독학)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 취미 · 선호 -->
+        <section>
+            <h2>Hobby &amp; Preference</h2>
+            <ul>
+                <li>좋아하는 음악: 한스 짐머의 영화음악을 좋아합니다.</li>
+                <li>좋아하는 언어: 한국어, 영어, 독일어, Python, SQL</li>
+                <li>좋아하는 운동: 달리기, 농구</li>
+                <li>좋아하는 음식: 참치김치찌개, 돈까스, 국밥</li>
+                <li>좋아하는 영화: Interstellar (2014), Good Will Hunting (1997), 태극기 휘날리며 (2004), 엘리멘탈 (2023)</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>© 2026 허륭 Ryung Hoh</p>
+        </footer>
+    </div>
+</body>
+</html>
