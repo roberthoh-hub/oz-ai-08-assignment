@@ -1,0 +1,285 @@
+/* ===== 기본 설정 ===== */
+:root {
+    --main: #1f4e79;      /* 제목·강조 색 */
+    --accent: #2e86c1;    /* 링크·포인트 색 */
+    --text: #333333;
+    --muted: #6b7280;
+    --line: #d9d9d9;
+    --bg: #f4f6f9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+.container {
+    max-width: 860px;
+    margin: 40px auto;
+    padding: 48px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== 헤더 ===== */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding-bottom: 28px;
+    border-bottom: 3px solid var(--main);
+}
+
+.profile-photo {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--line);
+    flex-shrink: 0;
+}
+
+.profile h1 {
+    font-size: 32px;
+    color: var(--main);
+}
+
+.en-name {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--muted);
+    margin-left: 8px;
+}
+
+.headline {
+    margin: 8px 0 12px;
+    font-weight: 600;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    list-style: none;
+    font-size: 14px;
+}
+
+/* ===== 섹션 공통 ===== */
+section {
+    margin-top: 36px;
+}
+
+h2 {
+    font-size: 20px;
+    color: var(--main);
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+}
+
+h3 {
+    font-size: 16px;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section li {
+    margin-bottom: 4px;
+}
+
+/* ===== 핵심 역량 카드 ===== */
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.card-list li {
+    padding: 16px;
+    background-color: #f8fafc;
+    border-left: 4px solid var(--accent);
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.card-list strong {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--main);
+}
+
+/* ===== 프로젝트 항목 ===== */
+.item {
+    margin-bottom: 24px;
+}
+
+.item-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.period {
+    font-size: 13px;
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+.meta {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 6px;
+}
+
+.badge {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 1px 10px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: var(--accent);
+    border-radius: 999px;
+    vertical-align: middle;
+}
+
+/* ===== 경력 표 ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th,
+td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    color: #ffffff;
+    background-color: var(--main);
+    white-space: nowrap;
+}
+
+td:nth-child(-n+4) {
+    white-space: nowrap;   /* 회사명·부서·직무·기간은 한 줄로 */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tbody tr:hover {
+    background-color: #eaf2fb;
+}
+
+/* ===== 학력·자격증 목록 ===== */
+.plain {
+    list-style: none;
+    padding-left: 0;
+}
+
+.plain .period {
+    display: inline-block;
+    width: 110px;
+}
+
+/* ===== 기술 태그 ===== */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    padding: 4px 12px;
+    font-size: 13px;
+    color: var(--main);
+    background-color: #eaf2fb;
+    border-radius: 999px;
+}
+
+/* ===== 2단 배치 ===== */
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+/* ===== 푸터 ===== */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+/* ===== 모바일 화면 ===== */
+@media (max-width: 640px) {
+    .container {
+        margin: 0;
+        padding: 24px;
+        border-radius: 0;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact {
+        justify-content: center;
+    }
+
+    .card-list,
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .item-head {
+        flex-direction: column;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;   /* 좁은 화면에서는 표를 가로 스크롤 */
+    }
+}
+
+/* ===== 인쇄 ===== */
+@media print {
+    body {
+        background: none;
+    }
+
+    .container {
+        margin: 0;
+        box-shadow: none;
+    }
+}
