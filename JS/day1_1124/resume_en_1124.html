@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AH_08_ryunghoh_resume</title>
+    <link rel="stylesheet" href="./resume_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Language switch / 언어 전환 -->
+        <nav class="lang-switch" aria-label="Language">
+            <svg class="globe" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span class="active" aria-current="page">EN</span><span class="sep">/</span><a href="./resume_1124.html" hreflang="ko" lang="ko">KR</a>
+        </nav>
+
+        <!-- Header: name, contact, headline -->
+        <header class="profile">
+            <img class="profile-photo" src="허륭.jpg" alt="Profile photo of Ryung Hoh">
+            <div class="profile-text">
+                <h1>Ryung Hoh (Robert) <span class="en-name">허륭</span></h1>
+                <p class="headline">AI healthcare planner combining four years of hands-on experience in hospital and global health settings with Python, SQL, and machine learning skills — turning clinical pain points into data-defined problems and well-designed services.</p>
+                <ul class="contact">
+                    <span><a href="mailto:example@gmail.com">example@gmail.com</a></span>
+                    <span><a href="https://www.linkedin.com/in/ryung-hoh-5501a81bb/" target="_blank">LinkedIn</a></span>
+                    <span><a href="https://github.com/roberthoh-hub" target="_blank">GitHub</a></span>
+                    <span><a href="https://velog.io/@ryunghoh/posts" target="_blank">velog</a></span>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Summary -->
+        <section>
+            <h2>Professional Summary</h2>
+            <p>I am Ryung Hoh, a multilingual professional who enjoys learning both human languages and programming languages, and who excels at understanding complex information and organizing it clearly. I am currently completing the AI Healthcare program at OZ Coding School, where I am building skills in machine learning, deep learning, and web development (HTML, CSS, and JavaScript).</p>
+        </section>
+
+        <!-- Core Competencies -->
+        <section>
+            <h2>Core Competencies</h2>
+            <ul class="card-list">
+                <li><strong>AI Healthcare Service Planning</strong>Framed DUR (Drug Utilization Review) alert fatigue as a project problem; designed the KPI tree, target label (Y), and a three-tier alert interface (RED · YELLOW · GREY), and demonstrated it through a mock EMR demo</li>
+                <li><strong>Healthcare Data Analysis</strong>Clinical data cleaning and ensemble modeling in Python and SQL, label-leakage auditing, and statistical validation including Fisher's exact test and Wilson confidence intervals</li>
+                <li><strong>Healthcare Institution Experience</strong>Healthcare workforce training, an overseas hospital construction project, and WHO-partnered events at Seoul National University Bundang Hospital, the National Rehabilitation Center, and Yonsei University Health System</li>
+                <li><strong>Team Leadership &amp; Global Collaboration</strong>Led two AI project teams (including a 1st-place DACON hackathon finish); coordinated multiple stakeholders; communicated in English with trainees from 18 countries and foreign ministries of health</li>
+            </ul>
+        </section>
+
+        <!-- AI Projects -->
+        <section>
+            <h2>AI Projects</h2>
+
+            <article class="item">
+                <div class="item-head">
+                    <h3>SmartDUR — Prescription-Stage DUR Alert Prioritization Service</h3>
+                    <span class="period">Oct 2026 – Nov 2026</span>
+                </div>
+                <p class="meta">OZ Coding School, Team "Chulbal Dream" (6 members) · Team Lead · Final Presenter</p>
+                <ul>
+                    <li>Designed a model and user interface that classifies 1,030 inpatient alerts into three priority tiers, using 14 tables of patient clinical data</li>
+                    <li>Identified a "shortcut" in which alert type alone produced a PR-AUC of 0.51; redefined the learning target and eliminated label leakage, bringing PR-AUC to a realistic 0.17 (vs. a 0.13 baseline)</li>
+                    <li>Designed the expected-benefit calculation template and estimated a net benefit of KRW 437 million and an ROI of 153.8% for the assigned workflow</li>
+                    <li>Managed the project through a RACI matrix and stage gates (G1–G5); delivered the final presentation and a live HTML mock-EMR demo</li>
+                </ul>
+            </article>
+
+            <article class="item">
+                <div class="item-head">
+                    <h3>AI Hackathon: Predicting Pregnancy Success in Infertility Patients <span class="badge">1st Place</span></h3>
+                    <span class="period">Oct 14 – Oct 20, 2026</span>
+                </div>
+                <p class="meta">DACON · OZ Coding School Cohort 8 · Team "Heo-Jeon-Ha-Jae" (4 members) · Team Lead · Experiment Analysis &amp; Model Selection · Presenter</p>
+                <ul>
+                    <li>Binary classification competition predicting pregnancy success from infertility treatment data; ranked 1st among teams with a Public LB score of 0.7427546</li>
+                    <li>Shifted team strategy toward "combining models that fail differently," building a three-model ensemble of LightGBM, CatBoost, and a missing-value-preserving model</li>
+                    <li>Proposed a neural network trained with a pairwise ranking loss aligned to AUC; retained it at a 5% blend weight through final submission</li>
+                </ul>
+            </article>
+
+            <article class="item">
+                <div class="item-head">
+                    <h3>Additional AI Healthcare Projects</h3>
+                    <span class="period">Sep 2026 – Oct 2026</span>
+                </div>
+                <ul>
+                    <li>Lymph node metastasis prediction in lung adenocarcinoma (Team 6): authored the feature definition document and compiled the variable review sheet</li>
+                    <li>Health data visualization by smoking status (4 members): performed EDA and visualization on 7,000 records; coordinated the team schedule</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2>Professional Experience</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Organization</th>
+                        <th>Department</th>
+                        <th>Position</th>
+                        <th>Period</th>
+                        <th>Key Achievements</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Seoul National University Bundang Hospital</td>
+                        <td>External Affairs Team</td>
+                        <td>Contract Administrative Staff</td>
+                        <td>Feb 2025 – May 2026</td>
+                        <td>Served as liaison for a consulting project to establish a 300-bed general hospital in Tashkent, Uzbekistan; delivered weekly reports to the Ministry of Health for 15 months with zero omissions; submitted the draft healthcare workforce training plan</td>
+                    </tr>
+                    <tr>
+                        <td>National Rehabilitation Center</td>
+                        <td>Department of Spinal Cord Injury Rehabilitation</td>
+                        <td>Youth Intern</td>
+                        <td>Jul 2024 – Dec 2024</td>
+                        <td>Supported operations for a WHO-partnered rehabilitation forum; achieved a perfect 5.0/5.0 satisfaction rating for the international training program (20+ Korean–English consecutive interpreting sessions)</td>
+                    </tr>
+                    <tr>
+                        <td>Yonsei University Health System, Industry-Academic Cooperation Foundation</td>
+                        <td>Public Health Division</td>
+                        <td>Researcher</td>
+                        <td>Mar 2023 – Aug 2023</td>
+                        <td>Managed the KOFIH Lee Jong-wook Fellowship training program for 14 fellows from 9 countries</td>
+                    </tr>
+                    <tr>
+                        <td>Yonsei University Graduate School of Public Health</td>
+                        <td>Administrative Office</td>
+                        <td>Contract Administrative Assistant</td>
+                        <td>Mar 2021 – Feb 2023</td>
+                        <td>Supported 57 KOICA fellows from 18 countries, 98% of whom earned a Master of Public Health degree</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Education & Training -->
+        <section>
+            <h2>Education &amp; Training</h2>
+            <ul class="plain">
+                <li><span class="period">2026 – Present</span> OZ Coding School, AI Healthcare Program — Python, SQL, Machine Learning, Deep Learning (CNN), HTML/CSS</li>
+                <li><span class="period">2015 – 2021</span> CHA University, B.S. in Health and Welfare Informatics — 1st Place, Annual Research Competition; Student Tutor in Health Statistics</li>
+                <li><span class="period">2012 – 2015</span> Daeil Foreign Language High School, German Language Major</li>
+            </ul>
+        </section>
+
+        <!-- Skills -->
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="tags">
+                <span>Python</span><span>pandas</span><span>scikit-learn</span><span>LightGBM</span><span>CatBoost</span><span>Optuna</span><span>Keras</span><span>SQL</span><span>MongoDB</span><span>Excel·VBA</span><span>Access</span><span>HTML/CSS</span><span>Miro</span><span>Notion</span>
+            </div>
+        </section>
+
+        <!-- Certifications & Languages -->
+        <section class="two-col">
+            <div>
+                <h2>Certifications</h2>
+                <ul class="plain">
+                    <li>ADsP, Advanced Data Analytics Semi-Professional (Aug 2026)</li>
+                    <li>Social Worker, Level 1 (Aug 2023)</li>
+                    <li>Korean History Proficiency Test, Level 2 (Jun 2024)</li>
+                    <li>KBS Korean Language Proficiency Test, Grade 3- (Sep 2026)</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Languages</h2>
+                <ul class="plain">
+                    <li>Korean — Native</li>
+                    <li>English — Professional proficiency: TOEIC 950 · IELTS 7.5 (CEFR C1)</li>
+                    <li>German — Upper intermediate (CEFR B2)</li>
+                    <li>Russian — Basic</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Interests -->
+        <section>
+            <h2>Interests</h2>
+            <ul>
+                <li>Music: Film scores by Hans Zimmer</li>
+                <li>Languages: Korean, English, German, Python, SQL</li>
+                <li>Sports: Running, basketball</li>
+                <li>Food: Tuna kimchi stew, tonkatsu, gukbap (Korean rice soup)</li>
+                <li>Films: Interstellar (2014), Good Will Hunting (1997), Taegukgi (2004), Elemental (2023)</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>© 2026 Ryung Hoh (허륭)</p>
+        </footer>
+    </div>
+</body>
+</html>
