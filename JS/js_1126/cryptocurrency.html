@@ -4,16 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./cryptocurrency.js">
-        
-    </script>
+    <style src="./cryptocurrency.css">
+    </style>
 </head>
 <body>
-    <h1>실시간 암호화폐 가격 변동 추적기</h1>
-    <button>전체보기</button>
-    <button>관심항목</button>
+    <div>class="container"</div>
+        <header>
+            <h1>실시간 암호화폐 가격 변동 추적기</h1>
+        </header>
+        
+        <section class="market-info">
+            <h2>암호화폐 실시간 시세</h2>
+            <p>USDT Market</p>
+            <div id="update-time">downloading data...</div>
+        </section>
+        
+        <section class="search-section">
+            <input type="search" placeholder="심볼 검색 (예: BTCUSDT)">
+        </section>
+
+        <button>전체보기</button>
+        <button>관심항목</button>
     <br>
-    <input type="search" placeholder="심볼 검색 (예: BTCUSDT)">
+    
     <table>
         <thead>
             <th>관심</th>
@@ -42,5 +55,8 @@
             </tr>
         </tbody>
     </table>
+    <script src="./cryptocurrency.js">
+    </script>
 </body>
+
 </html>

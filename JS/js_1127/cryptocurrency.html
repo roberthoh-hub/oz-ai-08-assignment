@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 암호화폐 가격 변동 추적기</title>
+    <link rel="stylesheet" href="./cryptocurrency.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>실시간 암호화폐 가격 변동 추적기</h1>
+            <p class="sub">USDT 마켓, 1초마다 자동 갱신</p>
+        </header>
+        
+        <!-- [요구사항 4] 전체보기 / 관심항목 탭 분리 -->
+        <nav class="tabs">
+            <button id="tabAll" class="tab active">전체보기</button>
+            <button id="tabFav" class="tab">관심항목</button>
+        </nav>
+        
+        <!-- [요구사항 2] type="search" 검색창 -->
+        <section class="search-section">
+            <input id="searchInput" type="search" placeholder="심볼 검색 (예: BTCUSDT)">
+        </section>
+
+        <div class="status">
+            <span id="updateTime">데이터 불러오는 중...</span>
+            <div id="countInfo"></div>
+        </div>
+
+        <!-- [요구사항 3] 관심, 심볼, 현재가, 24시간 변동률, 최고가, 최저가-->
+        <table>
+            <thead>
+                <tr>
+                    <th>관심</th>
+                    <th>심볼</th>
+                    <th>현재가</th>
+                    <th>24시간 변동률</th>
+                    <th>최고가</th>
+                    <th>최저가</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+        <p id="emptyMessage" class="empty" hidden></p>
+    </div>
+
+    <script src="./cryptocurrency.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 16px;
+    background-color: #f4f5f7;
+    font-family: -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    color: #222;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #2c3e50;
+}
+
+.sub {
+    margin: 6px 0 0;
+    font-size: 13px;
+    color: #888;
+}
+
+/* 탭 버튼 */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px 0 16px;
+}
+
+.tab {
+    padding: 8px 18px;
+    border: 1px solid #ccd;
+    border-radius: 6px;
+    background-color: #eef0f3;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+    color: #fff;
+}
+
+/* 검색창 */
+.search-section {
+    display: flex;
+    justify-content: center;
+}
+
+#searchInput {
+    width: 320px;
+    padding: 9px 12px;
+    border: 1px solid #ccd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 0 8px;
+    font-size: 12px;
+    color: #888;
+}
+
+/* 표 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th {
+    padding: 10px 8px;
+    background-color: #f7f8fa;
+    border-bottom: 2px solid #e3e5e8;
+    text-align: left;
+    font-weight: 600;
+    color: #555;
+}
+
+td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background-color: #fafbfc;
+}
+
+.symbol {
+    font-weight: 700;
+}
+
+/* 별 버튼: 기본은 색 없음(☆), 관심 등록 시 노란 별(★) */
+.star {
+    border: none;
+    background: none;
+    font-size: 18px;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.star.on {
+    color: #f5c518;
+}
+
+/* 한국식 표기: 상승 빨강, 하락 파랑 */
+.up {
+    color: #e03131;
+    font-weight: 600;
+}
+
+.down {
+    color: #1c7ed6;
+    font-weight: 600;
+}
+
+.empty {
+    padding: 24px 0;
+    text-align: center;
+    color: #999;
+}
